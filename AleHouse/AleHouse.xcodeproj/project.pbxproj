@@ -9,10 +9,8 @@
 /* Begin PBXBuildFile section */
 		188592B626D2EEB4009A7C73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188592B526D2EEB4009A7C73 /* AppDelegate.swift */; };
 		188592B826D2EEB4009A7C73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188592B726D2EEB4009A7C73 /* SceneDelegate.swift */; };
-		188592BA26D2EEB4009A7C73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188592B926D2EEB4009A7C73 /* ContentView.swift */; };
 		188592BC26D2EEB5009A7C73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188592BB26D2EEB5009A7C73 /* Assets.xcassets */; };
 		188592C226D2EEB5009A7C73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188592C026D2EEB5009A7C73 /* LaunchScreen.storyboard */; };
-		188592CD26D2EEB5009A7C73 /* AleHouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188592CC26D2EEB5009A7C73 /* AleHouseTests.swift */; };
 		188592EB26D2EF26009A7C73 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188592EA26D2EF26009A7C73 /* HomeView.swift */; };
 		188592ED26D2EF35009A7C73 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188592EC26D2EF35009A7C73 /* HomeViewController.swift */; };
 		1885940F26D2EFF1009A7C73 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1885940E26D2EFF1009A7C73 /* HomeCoordinator.swift */; };
@@ -68,12 +66,10 @@
 		188592B226D2EEB4009A7C73 /* AleHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AleHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		188592B526D2EEB4009A7C73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		188592B726D2EEB4009A7C73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		188592B926D2EEB4009A7C73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		188592BB26D2EEB5009A7C73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		188592C126D2EEB5009A7C73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		188592C326D2EEB5009A7C73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		188592C826D2EEB5009A7C73 /* AleHouseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AleHouseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		188592CC26D2EEB5009A7C73 /* AleHouseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AleHouseTests.swift; sourceTree = "<group>"; };
 		188592CE26D2EEB5009A7C73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		188592EA26D2EF26009A7C73 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		188592EC26D2EF35009A7C73 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -159,7 +155,6 @@
 				1885941026D2F075009A7C73 /* Modules */,
 				188592E626D2EEE6009A7C73 /* Ressources */,
 				188592E526D2EED5009A7C73 /* Application */,
-				188592B926D2EEB4009A7C73 /* ContentView.swift */,
 			);
 			path = AleHouse;
 			sourceTree = "<group>";
@@ -168,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				18A9A70626D3BFD000B266CA /* Modules */,
-				188592CC26D2EEB5009A7C73 /* AleHouseTests.swift */,
 				188592CE26D2EEB5009A7C73 /* Info.plist */,
 			);
 			path = AleHouseTests;
@@ -534,7 +528,6 @@
 				18A9A6E026D31E1C00B266CA /* BeerListCoordinator.swift in Sources */,
 				18A9A70526D3BA5000B266CA /* BeerDetailCoordinator.swift in Sources */,
 				188592B826D2EEB4009A7C73 /* SceneDelegate.swift in Sources */,
-				188592BA26D2EEB4009A7C73 /* ContentView.swift in Sources */,
 				18A9A6E626D320AF00B266CA /* BeerListView.swift in Sources */,
 				18A9A6FF26D3B9AE00B266CA /* BeerDetailViewController.swift in Sources */,
 				18A9A70326D3BA0B00B266CA /* BeerDetailPresenter.swift in Sources */,
@@ -567,7 +560,6 @@
 				18A9A71A26D3C13400B266CA /* AleHouseSeeds.swift in Sources */,
 				18A9A71C26D3C33200B266CA /* HomeViewControllerTests.swift in Sources */,
 				18A9A70B26D3C00200B266CA /* HomeInteractorTests.swift in Sources */,
-				188592CD26D2EEB5009A7C73 /* AleHouseTests.swift in Sources */,
 				18A9A70F26D3C02100B266CA /* BeerListInteractorTests.swift in Sources */,
 				18A9A71826D3C09000B266CA /* BeerDetailPresenterTests.swift in Sources */,
 			);

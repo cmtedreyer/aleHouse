@@ -57,7 +57,7 @@ extension BeerListInteractor: BeerListInteractable {
     }
     
     func filterBeerListWith(text: String) {
-        beerList = text.isEmpty ? beerResponse : beerResponse.filter({$0.name.contains(text)})
+        beerList = text.isEmpty ? beerResponse : beerResponse.filter({$0.name.lowercased().contains(text.lowercased())})
         presenter.reloadBeerList()
     }
     
