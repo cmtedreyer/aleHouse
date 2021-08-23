@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  AleHouse
+
+  Created by Tiago Nunes Dreyer on 22/08/21.
+  
+*/
+
+"home_title" = "Bem vindo à Ale House!";
+"home_sub_title" = "Aqui você encontrará informações sobre as deliciosas variações produzidas em nossa Ale House, além de curiosidades informações sobre sua produção.\n\nEscolha sua favorita, mas consuma com moderação!";
+"home_start_button"= "Começar";
+"beer_list_searchbar" = "Filtrar Cervejas...";
+"generic_error_title" = "Algo de errado não está certo!";
+"generic_error_description" = "Um erro desconhecido foi encontrado. Aguarde um momento e tente novamente!";
+"empty_response_error_description" = "Erro Não foi encontrada nenhuma cerveja!";
+"ok" = "Ok";

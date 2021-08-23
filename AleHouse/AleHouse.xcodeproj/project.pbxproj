@@ -1,0 +1,833 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		188592B626D2EEB4009A7C73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188592B526D2EEB4009A7C73 /* AppDelegate.swift */; };
+		188592B826D2EEB4009A7C73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188592B726D2EEB4009A7C73 /* SceneDelegate.swift */; };
+		188592BA26D2EEB4009A7C73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188592B926D2EEB4009A7C73 /* ContentView.swift */; };
+		188592BC26D2EEB5009A7C73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188592BB26D2EEB5009A7C73 /* Assets.xcassets */; };
+		188592C226D2EEB5009A7C73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188592C026D2EEB5009A7C73 /* LaunchScreen.storyboard */; };
+		188592CD26D2EEB5009A7C73 /* AleHouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188592CC26D2EEB5009A7C73 /* AleHouseTests.swift */; };
+		188592EB26D2EF26009A7C73 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188592EA26D2EF26009A7C73 /* HomeView.swift */; };
+		188592ED26D2EF35009A7C73 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188592EC26D2EF35009A7C73 /* HomeViewController.swift */; };
+		1885940F26D2EFF1009A7C73 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1885940E26D2EFF1009A7C73 /* HomeCoordinator.swift */; };
+		18A9A5BD26D3114A00B266CA /* BaseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A5BC26D3114A00B266CA /* BaseImageView.swift */; };
+		18A9A6E026D31E1C00B266CA /* BeerListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A6DF26D31E1C00B266CA /* BeerListCoordinator.swift */; };
+		18A9A6E226D31E2B00B266CA /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A6E126D31E2B00B266CA /* BeerListViewController.swift */; };
+		18A9A6E426D3206600B266CA /* BeerListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A6E326D3206600B266CA /* BeerListInteractor.swift */; };
+		18A9A6E626D320AF00B266CA /* BeerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A6E526D320AF00B266CA /* BeerListView.swift */; };
+		18A9A6E826D3265400B266CA /* BaseSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A6E726D3265400B266CA /* BaseSearchBar.swift */; };
+		18A9A6EB26D328D700B266CA /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A6EA26D328D700B266CA /* Beer.swift */; };
+		18A9A6EE26D3291F00B266CA /* AleHouseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A6ED26D3291F00B266CA /* AleHouseConstants.swift */; };
+		18A9A6F026D329CF00B266CA /* BeerListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A6EF26D329CF00B266CA /* BeerListService.swift */; };
+		18A9A6F326D32FF300B266CA /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A6F226D32FF300B266CA /* Errors.swift */; };
+		18A9A6F526D332D800B266CA /* BeerListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A6F426D332D800B266CA /* BeerListPresenter.swift */; };
+		18A9A6F726D3382E00B266CA /* BeerListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A6F626D3382E00B266CA /* BeerListTableViewCell.swift */; };
+		18A9A6F926D33AAA00B266CA /* DownloadDownloadImageViewableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A6F826D33AAA00B266CA /* DownloadDownloadImageViewableImageView.swift */; };
+		18A9A6FD26D3B83E00B266CA /* BeerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A6FC26D3B83E00B266CA /* BeerDetailView.swift */; };
+		18A9A6FF26D3B9AE00B266CA /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A6FE26D3B9AE00B266CA /* BeerDetailViewController.swift */; };
+		18A9A70126D3B9C700B266CA /* BeerDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A70026D3B9C700B266CA /* BeerDetailInteractor.swift */; };
+		18A9A70326D3BA0B00B266CA /* BeerDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A70226D3BA0B00B266CA /* BeerDetailPresenter.swift */; };
+		18A9A70526D3BA5000B266CA /* BeerDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A70426D3BA5000B266CA /* BeerDetailCoordinator.swift */; };
+		18A9A70B26D3C00200B266CA /* HomeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A70A26D3C00200B266CA /* HomeInteractorTests.swift */; };
+		18A9A70F26D3C02100B266CA /* BeerListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A70E26D3C02100B266CA /* BeerListInteractorTests.swift */; };
+		18A9A71226D3C03900B266CA /* BeerListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A71126D3C03900B266CA /* BeerListPresenterTests.swift */; };
+		18A9A71626D3C06F00B266CA /* BeerDetailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A71526D3C06F00B266CA /* BeerDetailInteractorTests.swift */; };
+		18A9A71826D3C09000B266CA /* BeerDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A71726D3C09000B266CA /* BeerDetailPresenterTests.swift */; };
+		18A9A71A26D3C13400B266CA /* AleHouseSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A71926D3C13400B266CA /* AleHouseSeeds.swift */; };
+		18A9A71C26D3C33200B266CA /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A71B26D3C33200B266CA /* HomeViewControllerTests.swift */; };
+		18A9A71E26D3C44500B266CA /* BeerDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A71D26D3C44500B266CA /* BeerDetailViewControllerTests.swift */; };
+		18A9A72026D3C45200B266CA /* BeerListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A71F26D3C45200B266CA /* BeerListViewControllerTests.swift */; };
+		18D6AC6626D2F4190053D21C /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6AC6526D2F4190053D21C /* HomeInteractor.swift */; };
+		18D6AC6D26D2F7980053D21C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6AC6C26D2F7980053D21C /* UIViewExtension.swift */; };
+		18D6AC7026D2FB830053D21C /* BaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6AC6F26D2FB830053D21C /* BaseLabel.swift */; };
+		18D6AC7226D2FCAE0053D21C /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6AC7126D2FCAE0053D21C /* UIFontExtension.swift */; };
+		18D6AC7526D2FE2A0053D21C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18D6AC7426D2FE2A0053D21C /* Localizable.strings */; };
+		18D6AC7726D2FE470053D21C /* AleHouseStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6AC7626D2FE470053D21C /* AleHouseStrings.swift */; };
+		18D6AC7926D301090053D21C /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6AC7826D301090053D21C /* BaseButton.swift */; };
+		18D6AC7B26D305E40053D21C /* BaseStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6AC7A26D305E40053D21C /* BaseStackView.swift */; };
+		18D6AC7D26D30AEA0053D21C /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6AC7C26D30AEA0053D21C /* UINavigationControllerExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		188592C926D2EEB5009A7C73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 188592AA26D2EEB4009A7C73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 188592B126D2EEB4009A7C73;
+			remoteInfo = AleHouse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		188592B226D2EEB4009A7C73 /* AleHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AleHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		188592B526D2EEB4009A7C73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		188592B726D2EEB4009A7C73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		188592B926D2EEB4009A7C73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		188592BB26D2EEB5009A7C73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		188592C126D2EEB5009A7C73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		188592C326D2EEB5009A7C73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188592C826D2EEB5009A7C73 /* AleHouseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AleHouseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		188592CC26D2EEB5009A7C73 /* AleHouseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AleHouseTests.swift; sourceTree = "<group>"; };
+		188592CE26D2EEB5009A7C73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188592EA26D2EF26009A7C73 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		188592EC26D2EF35009A7C73 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1885940E26D2EFF1009A7C73 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		18A9A5BC26D3114A00B266CA /* BaseImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseImageView.swift; sourceTree = "<group>"; };
+		18A9A6DF26D31E1C00B266CA /* BeerListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListCoordinator.swift; sourceTree = "<group>"; };
+		18A9A6E126D31E2B00B266CA /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
+		18A9A6E326D3206600B266CA /* BeerListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListInteractor.swift; sourceTree = "<group>"; };
+		18A9A6E526D320AF00B266CA /* BeerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListView.swift; sourceTree = "<group>"; };
+		18A9A6E726D3265400B266CA /* BaseSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSearchBar.swift; sourceTree = "<group>"; };
+		18A9A6EA26D328D700B266CA /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		18A9A6ED26D3291F00B266CA /* AleHouseConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AleHouseConstants.swift; sourceTree = "<group>"; };
+		18A9A6EF26D329CF00B266CA /* BeerListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListService.swift; sourceTree = "<group>"; };
+		18A9A6F226D32FF300B266CA /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		18A9A6F426D332D800B266CA /* BeerListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListPresenter.swift; sourceTree = "<group>"; };
+		18A9A6F626D3382E00B266CA /* BeerListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListTableViewCell.swift; sourceTree = "<group>"; };
+		18A9A6F826D33AAA00B266CA /* DownloadDownloadImageViewableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadDownloadImageViewableImageView.swift; sourceTree = "<group>"; };
+		18A9A6FC26D3B83E00B266CA /* BeerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailView.swift; sourceTree = "<group>"; };
+		18A9A6FE26D3B9AE00B266CA /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
+		18A9A70026D3B9C700B266CA /* BeerDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailInteractor.swift; sourceTree = "<group>"; };
+		18A9A70226D3BA0B00B266CA /* BeerDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailPresenter.swift; sourceTree = "<group>"; };
+		18A9A70426D3BA5000B266CA /* BeerDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailCoordinator.swift; sourceTree = "<group>"; };
+		18A9A70A26D3C00200B266CA /* HomeInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorTests.swift; sourceTree = "<group>"; };
+		18A9A70E26D3C02100B266CA /* BeerListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListInteractorTests.swift; sourceTree = "<group>"; };
+		18A9A71126D3C03900B266CA /* BeerListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListPresenterTests.swift; sourceTree = "<group>"; };
+		18A9A71526D3C06F00B266CA /* BeerDetailInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailInteractorTests.swift; sourceTree = "<group>"; };
+		18A9A71726D3C09000B266CA /* BeerDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailPresenterTests.swift; sourceTree = "<group>"; };
+		18A9A71926D3C13400B266CA /* AleHouseSeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AleHouseSeeds.swift; sourceTree = "<group>"; };
+		18A9A71B26D3C33200B266CA /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
+		18A9A71D26D3C44500B266CA /* BeerDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewControllerTests.swift; sourceTree = "<group>"; };
+		18A9A71F26D3C45200B266CA /* BeerListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewControllerTests.swift; sourceTree = "<group>"; };
+		18D6AC6526D2F4190053D21C /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		18D6AC6C26D2F7980053D21C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		18D6AC6F26D2FB830053D21C /* BaseLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
+		18D6AC7126D2FCAE0053D21C /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		18D6AC7426D2FE2A0053D21C /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		18D6AC7626D2FE470053D21C /* AleHouseStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AleHouseStrings.swift; sourceTree = "<group>"; };
+		18D6AC7826D301090053D21C /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		18D6AC7A26D305E40053D21C /* BaseStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseStackView.swift; sourceTree = "<group>"; };
+		18D6AC7C26D30AEA0053D21C /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		188592AF26D2EEB4009A7C73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188592C526D2EEB5009A7C73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		188592A926D2EEB4009A7C73 = {
+			isa = PBXGroup;
+			children = (
+				188592B426D2EEB4009A7C73 /* AleHouse */,
+				188592CB26D2EEB5009A7C73 /* AleHouseTests */,
+				188592B326D2EEB4009A7C73 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		188592B326D2EEB4009A7C73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				188592B226D2EEB4009A7C73 /* AleHouse.app */,
+				188592C826D2EEB5009A7C73 /* AleHouseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		188592B426D2EEB4009A7C73 /* AleHouse */ = {
+			isa = PBXGroup;
+			children = (
+				1885941226D2F08B009A7C73 /* Base */,
+				1885941026D2F075009A7C73 /* Modules */,
+				188592E626D2EEE6009A7C73 /* Ressources */,
+				188592E526D2EED5009A7C73 /* Application */,
+				188592B926D2EEB4009A7C73 /* ContentView.swift */,
+			);
+			path = AleHouse;
+			sourceTree = "<group>";
+		};
+		188592CB26D2EEB5009A7C73 /* AleHouseTests */ = {
+			isa = PBXGroup;
+			children = (
+				18A9A70626D3BFD000B266CA /* Modules */,
+				188592CC26D2EEB5009A7C73 /* AleHouseTests.swift */,
+				188592CE26D2EEB5009A7C73 /* Info.plist */,
+			);
+			path = AleHouseTests;
+			sourceTree = "<group>";
+		};
+		188592E526D2EED5009A7C73 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				188592C326D2EEB5009A7C73 /* Info.plist */,
+				188592B526D2EEB4009A7C73 /* AppDelegate.swift */,
+				188592B726D2EEB4009A7C73 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		188592E626D2EEE6009A7C73 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				18A9A5B726D30FD500B266CA /* Assets */,
+				18D6AC7326D2FE140053D21C /* Strings */,
+				188592C026D2EEB5009A7C73 /* LaunchScreen.storyboard */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		188592E726D2EF05009A7C73 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				18A9A6FA26D3B6BD00B266CA /* BeerDetail */,
+				18A9A5B626D30F8E00B266CA /* BeerList */,
+				188592E826D2EF0E009A7C73 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		188592E826D2EF0E009A7C73 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				188592E926D2EF19009A7C73 /* View */,
+				1885940E26D2EFF1009A7C73 /* HomeCoordinator.swift */,
+				18D6AC6526D2F4190053D21C /* HomeInteractor.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		188592E926D2EF19009A7C73 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				188592EA26D2EF26009A7C73 /* HomeView.swift */,
+				188592EC26D2EF35009A7C73 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1885941026D2F075009A7C73 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1885941126D2F07D009A7C73 /* AleHouse */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1885941126D2F07D009A7C73 /* AleHouse */ = {
+			isa = PBXGroup;
+			children = (
+				18A9A6E926D328C700B266CA /* Model */,
+				188592E726D2EF05009A7C73 /* Scenes */,
+			);
+			path = AleHouse;
+			sourceTree = "<group>";
+		};
+		1885941226D2F08B009A7C73 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				18A9A6F126D32F6100B266CA /* Errors */,
+				18A9A6EC26D3290E00B266CA /* Constants */,
+				18D6AC6B26D2F7820053D21C /* Extension */,
+				18D6AC6726D2F5040053D21C /* Components */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		18A9A5B626D30F8E00B266CA /* BeerList */ = {
+			isa = PBXGroup;
+			children = (
+				18A9A6DE26D31E0D00B266CA /* View */,
+				18A9A6DF26D31E1C00B266CA /* BeerListCoordinator.swift */,
+				18A9A6E326D3206600B266CA /* BeerListInteractor.swift */,
+				18A9A6F426D332D800B266CA /* BeerListPresenter.swift */,
+				18A9A6EF26D329CF00B266CA /* BeerListService.swift */,
+			);
+			path = BeerList;
+			sourceTree = "<group>";
+		};
+		18A9A5B726D30FD500B266CA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				188592BB26D2EEB5009A7C73 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		18A9A6DE26D31E0D00B266CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18A9A6E526D320AF00B266CA /* BeerListView.swift */,
+				18A9A6E126D31E2B00B266CA /* BeerListViewController.swift */,
+				18A9A6F626D3382E00B266CA /* BeerListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18A9A6E926D328C700B266CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18A9A6EA26D328D700B266CA /* Beer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18A9A6EC26D3290E00B266CA /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				18A9A6ED26D3291F00B266CA /* AleHouseConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		18A9A6F126D32F6100B266CA /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				18A9A6F226D32FF300B266CA /* Errors.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		18A9A6FA26D3B6BD00B266CA /* BeerDetail */ = {
+			isa = PBXGroup;
+			children = (
+				18A9A6FB26D3B82F00B266CA /* View */,
+				18A9A70026D3B9C700B266CA /* BeerDetailInteractor.swift */,
+				18A9A70226D3BA0B00B266CA /* BeerDetailPresenter.swift */,
+				18A9A70426D3BA5000B266CA /* BeerDetailCoordinator.swift */,
+			);
+			path = BeerDetail;
+			sourceTree = "<group>";
+		};
+		18A9A6FB26D3B82F00B266CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18A9A6FC26D3B83E00B266CA /* BeerDetailView.swift */,
+				18A9A6FE26D3B9AE00B266CA /* BeerDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18A9A70626D3BFD000B266CA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				18A9A70726D3BFD700B266CA /* AleHouse */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		18A9A70726D3BFD700B266CA /* AleHouse */ = {
+			isa = PBXGroup;
+			children = (
+				18A9A71326D3C05200B266CA /* Seeds */,
+				18A9A70826D3BFDC00B266CA /* Scenes */,
+			);
+			path = AleHouse;
+			sourceTree = "<group>";
+		};
+		18A9A70826D3BFDC00B266CA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				18A9A70D26D3C00F00B266CA /* BeerDetail */,
+				18A9A70C26D3C00900B266CA /* BeerList */,
+				18A9A70926D3BFE500B266CA /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		18A9A70926D3BFE500B266CA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				18A9A70A26D3C00200B266CA /* HomeInteractorTests.swift */,
+				18A9A71B26D3C33200B266CA /* HomeViewControllerTests.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		18A9A70C26D3C00900B266CA /* BeerList */ = {
+			isa = PBXGroup;
+			children = (
+				18A9A70E26D3C02100B266CA /* BeerListInteractorTests.swift */,
+				18A9A71126D3C03900B266CA /* BeerListPresenterTests.swift */,
+				18A9A71F26D3C45200B266CA /* BeerListViewControllerTests.swift */,
+			);
+			path = BeerList;
+			sourceTree = "<group>";
+		};
+		18A9A70D26D3C00F00B266CA /* BeerDetail */ = {
+			isa = PBXGroup;
+			children = (
+				18A9A71526D3C06F00B266CA /* BeerDetailInteractorTests.swift */,
+				18A9A71726D3C09000B266CA /* BeerDetailPresenterTests.swift */,
+				18A9A71D26D3C44500B266CA /* BeerDetailViewControllerTests.swift */,
+			);
+			path = BeerDetail;
+			sourceTree = "<group>";
+		};
+		18A9A71326D3C05200B266CA /* Seeds */ = {
+			isa = PBXGroup;
+			children = (
+				18A9A71926D3C13400B266CA /* AleHouseSeeds.swift */,
+			);
+			path = Seeds;
+			sourceTree = "<group>";
+		};
+		18D6AC6726D2F5040053D21C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				18D6AC6F26D2FB830053D21C /* BaseLabel.swift */,
+				18D6AC7826D301090053D21C /* BaseButton.swift */,
+				18D6AC7A26D305E40053D21C /* BaseStackView.swift */,
+				18A9A5BC26D3114A00B266CA /* BaseImageView.swift */,
+				18A9A6E726D3265400B266CA /* BaseSearchBar.swift */,
+				18A9A6F826D33AAA00B266CA /* DownloadDownloadImageViewableImageView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		18D6AC6B26D2F7820053D21C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				18D6AC6C26D2F7980053D21C /* UIViewExtension.swift */,
+				18D6AC7126D2FCAE0053D21C /* UIFontExtension.swift */,
+				18D6AC7C26D30AEA0053D21C /* UINavigationControllerExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		18D6AC7326D2FE140053D21C /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				18D6AC7426D2FE2A0053D21C /* Localizable.strings */,
+				18D6AC7626D2FE470053D21C /* AleHouseStrings.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		188592B126D2EEB4009A7C73 /* AleHouse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188592DC26D2EEB5009A7C73 /* Build configuration list for PBXNativeTarget "AleHouse" */;
+			buildPhases = (
+				188592AE26D2EEB4009A7C73 /* Sources */,
+				188592AF26D2EEB4009A7C73 /* Frameworks */,
+				188592B026D2EEB4009A7C73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AleHouse;
+			productName = AleHouse;
+			productReference = 188592B226D2EEB4009A7C73 /* AleHouse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		188592C726D2EEB5009A7C73 /* AleHouseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188592DF26D2EEB5009A7C73 /* Build configuration list for PBXNativeTarget "AleHouseTests" */;
+			buildPhases = (
+				188592C426D2EEB5009A7C73 /* Sources */,
+				188592C526D2EEB5009A7C73 /* Frameworks */,
+				188592C626D2EEB5009A7C73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				188592CA26D2EEB5009A7C73 /* PBXTargetDependency */,
+			);
+			name = AleHouseTests;
+			productName = AleHouseTests;
+			productReference = 188592C826D2EEB5009A7C73 /* AleHouseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		188592AA26D2EEB4009A7C73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					188592B126D2EEB4009A7C73 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					188592C726D2EEB5009A7C73 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 188592B126D2EEB4009A7C73;
+					};
+				};
+			};
+			buildConfigurationList = 188592AD26D2EEB4009A7C73 /* Build configuration list for PBXProject "AleHouse" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 188592A926D2EEB4009A7C73;
+			productRefGroup = 188592B326D2EEB4009A7C73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				188592B126D2EEB4009A7C73 /* AleHouse */,
+				188592C726D2EEB5009A7C73 /* AleHouseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		188592B026D2EEB4009A7C73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188592C226D2EEB5009A7C73 /* LaunchScreen.storyboard in Resources */,
+				18D6AC7526D2FE2A0053D21C /* Localizable.strings in Resources */,
+				188592BC26D2EEB5009A7C73 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188592C626D2EEB5009A7C73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		188592AE26D2EEB4009A7C73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A9A6F526D332D800B266CA /* BeerListPresenter.swift in Sources */,
+				188592ED26D2EF35009A7C73 /* HomeViewController.swift in Sources */,
+				188592B626D2EEB4009A7C73 /* AppDelegate.swift in Sources */,
+				18A9A6E426D3206600B266CA /* BeerListInteractor.swift in Sources */,
+				18A9A6F026D329CF00B266CA /* BeerListService.swift in Sources */,
+				18A9A6EB26D328D700B266CA /* Beer.swift in Sources */,
+				18D6AC7026D2FB830053D21C /* BaseLabel.swift in Sources */,
+				188592EB26D2EF26009A7C73 /* HomeView.swift in Sources */,
+				18D6AC7726D2FE470053D21C /* AleHouseStrings.swift in Sources */,
+				18D6AC7D26D30AEA0053D21C /* UINavigationControllerExtension.swift in Sources */,
+				18A9A6E026D31E1C00B266CA /* BeerListCoordinator.swift in Sources */,
+				18A9A70526D3BA5000B266CA /* BeerDetailCoordinator.swift in Sources */,
+				188592B826D2EEB4009A7C73 /* SceneDelegate.swift in Sources */,
+				188592BA26D2EEB4009A7C73 /* ContentView.swift in Sources */,
+				18A9A6E626D320AF00B266CA /* BeerListView.swift in Sources */,
+				18A9A6FF26D3B9AE00B266CA /* BeerDetailViewController.swift in Sources */,
+				18A9A70326D3BA0B00B266CA /* BeerDetailPresenter.swift in Sources */,
+				1885940F26D2EFF1009A7C73 /* HomeCoordinator.swift in Sources */,
+				18D6AC7926D301090053D21C /* BaseButton.swift in Sources */,
+				18D6AC6D26D2F7980053D21C /* UIViewExtension.swift in Sources */,
+				18A9A6F326D32FF300B266CA /* Errors.swift in Sources */,
+				18A9A70126D3B9C700B266CA /* BeerDetailInteractor.swift in Sources */,
+				18A9A6E226D31E2B00B266CA /* BeerListViewController.swift in Sources */,
+				18A9A6FD26D3B83E00B266CA /* BeerDetailView.swift in Sources */,
+				18A9A5BD26D3114A00B266CA /* BaseImageView.swift in Sources */,
+				18A9A6F726D3382E00B266CA /* BeerListTableViewCell.swift in Sources */,
+				18A9A6E826D3265400B266CA /* BaseSearchBar.swift in Sources */,
+				18D6AC6626D2F4190053D21C /* HomeInteractor.swift in Sources */,
+				18A9A6F926D33AAA00B266CA /* DownloadDownloadImageViewableImageView.swift in Sources */,
+				18D6AC7B26D305E40053D21C /* BaseStackView.swift in Sources */,
+				18A9A6EE26D3291F00B266CA /* AleHouseConstants.swift in Sources */,
+				18D6AC7226D2FCAE0053D21C /* UIFontExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188592C426D2EEB5009A7C73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A9A72026D3C45200B266CA /* BeerListViewControllerTests.swift in Sources */,
+				18A9A71226D3C03900B266CA /* BeerListPresenterTests.swift in Sources */,
+				18A9A71E26D3C44500B266CA /* BeerDetailViewControllerTests.swift in Sources */,
+				18A9A71626D3C06F00B266CA /* BeerDetailInteractorTests.swift in Sources */,
+				18A9A71A26D3C13400B266CA /* AleHouseSeeds.swift in Sources */,
+				18A9A71C26D3C33200B266CA /* HomeViewControllerTests.swift in Sources */,
+				18A9A70B26D3C00200B266CA /* HomeInteractorTests.swift in Sources */,
+				188592CD26D2EEB5009A7C73 /* AleHouseTests.swift in Sources */,
+				18A9A70F26D3C02100B266CA /* BeerListInteractorTests.swift in Sources */,
+				18A9A71826D3C09000B266CA /* BeerDetailPresenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		188592CA26D2EEB5009A7C73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 188592B126D2EEB4009A7C73 /* AleHouse */;
+			targetProxy = 188592C926D2EEB5009A7C73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		188592C026D2EEB5009A7C73 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				188592C126D2EEB5009A7C73 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		188592DA26D2EEB5009A7C73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		188592DB26D2EEB5009A7C73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		188592DD26D2EEB5009A7C73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = AleHouse/Ressources;
+				DEVELOPMENT_TEAM = R6JK28C884;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AleHouse/Application/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.tnd.AleHouse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		188592DE26D2EEB5009A7C73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = AleHouse/Ressources;
+				DEVELOPMENT_TEAM = R6JK28C884;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AleHouse/Application/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.tnd.AleHouse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		188592E026D2EEB5009A7C73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6JK28C884;
+				INFOPLIST_FILE = AleHouseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.tnd.AleHouseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AleHouse.app/AleHouse";
+			};
+			name = Debug;
+		};
+		188592E126D2EEB5009A7C73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6JK28C884;
+				INFOPLIST_FILE = AleHouseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.tnd.AleHouseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AleHouse.app/AleHouse";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		188592AD26D2EEB4009A7C73 /* Build configuration list for PBXProject "AleHouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188592DA26D2EEB5009A7C73 /* Debug */,
+				188592DB26D2EEB5009A7C73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		188592DC26D2EEB5009A7C73 /* Build configuration list for PBXNativeTarget "AleHouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188592DD26D2EEB5009A7C73 /* Debug */,
+				188592DE26D2EEB5009A7C73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		188592DF26D2EEB5009A7C73 /* Build configuration list for PBXNativeTarget "AleHouseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188592E026D2EEB5009A7C73 /* Debug */,
+				188592E126D2EEB5009A7C73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 188592AA26D2EEB4009A7C73 /* Project object */;
+}
